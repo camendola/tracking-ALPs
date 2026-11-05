@@ -3,8 +3,8 @@
 # Date: Fri 24 Jan 2020 12:20:09
 
 
-from object_library import all_decays, Decay
-import particles as P
+from .object_library import all_decays, Decay
+from . import particles as P
 
 
 Decay_ax = Decay(name = 'Decay_ax',

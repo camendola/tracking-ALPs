@@ -3,9 +3,9 @@
 # Date: Fri 24 Jan 2020 12:20:08
 
 
-from object_library import all_lorentz, Lorentz
+from .object_library import all_lorentz, Lorentz
 
-from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
+from .function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 try:
    import form_factors as ForFac 
 except ImportError:
