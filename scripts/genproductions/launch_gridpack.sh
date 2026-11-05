@@ -1,8 +1,8 @@
 #!/bin/bash
-# Usage: bash launch_gridpack.sh <BASE>
+# Usage: bash launch_gridpack.sh 
 # (it can be long - use tmux)
 
-BASE=$1
+BASE=$(pwd)
 GENDIR=$BASE/genproductions_scripts/bin/MadGraph5_aMCatNLO
 CARDBASE=$BASE/tracking-ALPs/model/genproduction_cards
 
