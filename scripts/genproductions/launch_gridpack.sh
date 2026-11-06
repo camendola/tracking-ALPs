@@ -31,7 +31,9 @@ echo "PROCESS=$PROCESS_NAME"
 cd $GENDIR
 $GENDIR/gridpack_generation.sh ${PROCESS_NAME} $MASSDIR/Cards 
 
+mv $GENDIR/${PROCESS_NAME}_el9_amd64_gcc11_CMSSW_13_2_9_tarball.tar.xz $MASSDIR/
 GRIDPACK=$MASSDIR/${PROCESS_NAME}_el9_amd64_gcc11_CMSSW_13_2_9_tarball.tar.xz
+
 sed "s|args = cms.vstring('.*')|args = cms.vstring('${GRIDPACK}')|" \
     $FRAGBASE > $FRAGDIR/${PROCESS_NAME}_fragment.py
 echo "Fragment created: $FRAGDIR/${PROCESS_NAME}_fragment.py"
